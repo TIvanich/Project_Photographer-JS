@@ -1,5 +1,4 @@
-<script>
-  // переводчик
+ // переводчик
   const arrLang = {
     'en': {
       'skills': 'Skills',
@@ -101,4 +100,3 @@
       elem.innerHTML = arrLang['en'][elem.getAttribute('text')]
     })
   }
-</script>
