@@ -51,12 +51,13 @@ function watcher() {
     gulp.watch('src/pug/**/*', html)
 }
 
+function js() {
+    return gulp.src('src/assets/js/app.js')
+        .pipe(gulp.dest('build/assets/js'))
+        .pipe(browserSync.stream())
+}
+
 gulp.task(
     'default',
-    gulp.parallel(browsersync, watcher, css, html, images)
+    gulp.parallel(browsersync, watcher, css, html, images, js)
 );
-
-
-
-
-    
