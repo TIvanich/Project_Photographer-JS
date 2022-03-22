@@ -6,26 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/vendors.min.css">
+    <link rel="stylesheet" href="./assets/css/stylesheet.scss">
     <link rel="stylesheet" href="./assets/css/app.css">
   </head>
   <body>
-    <!-- Slider main container-->
-    <div class="swiper">
-      <!-- Additional required wrapper-->
-      <div class="swiper-wrapper">
-        <!-- Slides-->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+    <header class="header">
+      <div class="container">
+        <div class="menu"><a href="#"> <img class="logomenu" src="./assets/imgs/logophoto.png" alt="photo"></a>
+          <div class="menu___btn"><a href="#">Skills</a><a href="#">Portfolio</a><a href="#">Video</a><a href="#">Price</a><a href="#">Contacts</a>
+            <button>en</button><span>/</span>
+            <button>ru</button>
+          </div>
+        </div>
       </div>
-      <!-- If we need pagination-->
-      <div class="swiper-pagination"></div>
-      <!-- If we need navigation buttons-->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <!-- If we need scrollbar-->
-      <div class="swiper-scrollbar"></div>
-    </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="hero">
+          <div class="hero___tittle">     
+            <h1>Alexa Rise</h1>
+            <h3>Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</h3>
+            <button>Hire me</button>
+          </div>
+          <div class="hero___img"><img src="./assets/imgs/bg.png" alt="bg"></div>
+        </div>
+        <div class="skills"><img class="line" src="./assets/imgs/line.svg" alt="line"><span>Skills</span>
+          <div class="skills__direction">
+            <div class="skills__direction-block"><img src="./assets/imgs/camera.svg" alt="camera">
+              <h7>Digital photography</h7>
+              <p>High-quality photos in the studio and on the nature</p>
+            </div>
+            <div class="skills__direction-block"><img src="./assets/imgs/video.svg" alt="video">
+              <h7>Video shooting</h7>
+              <p>Capture your moments so that they always stay with you</p>
+            </div>
+            <div class="skills__direction-block"><img src="./assets/imgs/image.svg" alt="image">
+              <h7>Retouch</h7>
+              <p>I strive to make photography <br> surpass reality</p>
+            </div>
+            <div class="skills__direction-block"><img src="./assets/imgs/mic.svg" alt="mic">
+              <h7>Audio</h7>
+              <p>Professional sounds recording for video, advertising, portfolio</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio"><img class="line" src="./assets/imgs/line.svg" alt="line"><span>Portfolio</span>
+          <div class="portfolio__button">
+            <button class="portfolio__btn">Winter</button>
+            <button class="portfolio__btn">Spring</button>
+            <button class="portfolio__btn">Summer</button>
+            <button class="portfolio__btn">Autumn</button>
+          </div>
+          <div class="portfolio__photos-grid">
+            <div class="portfolio__item1"><img src="./assets/imgs/portfolioautumn1.png" alt="autumn1"></div>
+            <div class="portfolio__item2"><img src="./assets/imgs/portfolioautumn2.png" alt="autumn2"></div>
+            <div class="portfolio__item3"><img src="./assets/imgs/portfolioautumn3.png" alt="autumn3"></div>
+            <div class="portfolio__item4"><img src="./assets/imgs/portfolioautumn4.png" alt="autumn4"></div>
+            <div class="portfolio__item5"><img src="./assets/imgs/portfolioautumn5.png" alt="autumn5"></div>
+            <div class="portfolio__item6"><img src="./assets/imgs/portfolioautumn6.png" alt="autumn6"></div>
+          </div>
+        </div>
+        <div class="videos"><img class="line" src="./assets/imgs/line.svg" alt="line"><span>Video</span>
+          <div class="videos__hero"><img src="./assets/imgs/video.png" alt="video">
+            <button> <img src="./assets/imgs/play.svg" alt="play"></button>
+          </div>
+        </div>
+        <div class="prices"> <img class="line" src="./assets/imgs/line.svg" alt="line"><span>Price</span>
+          <div class="prices__direction">
+            <div class="prices__direction-block">         
+              <h7>Standart</h7>
+              <p>500$</p>
+              <ul>
+                <li>One location</li>
+                <li>120 photos in color</li>
+                <li>12 photos in retouch</li>
+                <li>Readiness 2-3 weeks</li>
+                <li>Make up, visage</li>
+                <button>Order shooting</button>
+              </ul>
+            </div>
+            <div class="prices__direction-block">
+              <h7>Premium</h7>
+              <p>700$</p>
+              <ul>
+                <li>One or two locations</li>
+                <li>200 photos in color</li>
+                <li>20 photos in retouch</li>
+                <li>Readiness 1-2 weeks</li>
+                <li>Make up, visage</li>
+                <button>Order shooting</button>
+              </ul>
+            </div>
+            <div class="prices__direction-block">
+              <h7>Gold</h7>
+              <p>1000$</p>
+              <ul>
+                <li>Three locations or more</li>
+                <li>300 photos in color</li>
+                <li>12 photos in retouch</li>
+                <li>50 photos in retouch</li>
+                <li>Readiness 1 week</li>
+                <button>Order shooting</button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="hero__girl"><img src="./assets/imgs/contacts.jpg" alt="contacts">
+          <form class="hero__form" action="#">
+            <h5>Contact me</h5>
+            <input type="text" placeholder="Email">
+            <input type="number" placeholder="Phone">
+            <input type="text" placeholder="Message">
+            <button>Send message</button>
+          </form>
+        </div>
+        <div class="foot-bottom">
+          <div class="foot__git"><span>©</span><span>2022</span><span>github</span></div>
+          <div class="foot__center"><span>Rolling Scopes School</span></div>
+          <div class="foot__last"><a href="#"> <img src="./assets/imgs/vector1.svg" alt="vector1"></a><a href="#"><img src="./assets/imgs/vector2.svg" alt="vector2"></a><a href="#"><img src="./assets/imgs/vector3.svg" alt="vector3"></a><a href="#"><img src="./assets/imgs/vector4.svg" alt="vector4"></a></div>
+        </div>
+      </div>
+    </footer>
     <script src="./assets/js/vendors.min.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>

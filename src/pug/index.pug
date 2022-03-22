@@ -1,4 +1,7 @@
-extends layout/layout 
-
+extends layout/layout.pug
+block header
+  include ./components/header       
 block main
-    include ./components/swiper
+  include ./components/main
+block footer
+  include ./components/footer

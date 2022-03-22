@@ -1,2 +1,12 @@
-@import "./main/main.scss";
-@import "./components/swiper.scss";
+@import './components/reset.scss';
+@import './components/header.scss';
+@import './components/main.scss';
+@import './components/footer.scss';
+
+.container{
+  max-width: 1440px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+

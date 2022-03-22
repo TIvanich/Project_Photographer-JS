@@ -1,0 +1,65 @@
+header{
+    background:black;
+}
+.container{
+    width: 1440px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .logomenu{
+    height: 40px;
+    width: 50px;
+  }
+  .menu{
+    display: flex;
+  }
+  .menu___btn{
+    margin-left: auto;
+  }
+  .menu___btn a, .menu___btn{
+    font-family: Inter, sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    margin-right: 30px;
+  }
+  .menu___btn span{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    margin: 0px 9px;
+  }  
+  .menu___btn button{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    cursor: pointer;
+    margin-right: 0px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+  .logomenu:hover{
+    opacity: 0.7;
+  }
+  .menu___btn a:hover{
+    opacity: 0.7;
+  }
+  .menu___btn button:hover{
+    opacity: 0.7;
+  }
+  
