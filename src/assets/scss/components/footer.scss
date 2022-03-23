@@ -3,12 +3,22 @@ footer{
 }
 .foot-bottom{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
+  @media (max-width: 800px){
+    display: block;
+    text-align: center;    
+  }
 }
 .foot__git{
   display: flex;
   color: white;
   padding: 50px 20px;
+  text-align: center;
+  @media (max-width: 800px){
+    display: block;
+    text-align: center;
+    padding: 0px 20px;    
+  }  
 }
 .foot__git span{
   margin-right: 20px;
@@ -28,15 +38,31 @@ footer{
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
+  @media (max-width: 800px){   
+    padding: 0px 20px;   
+  }  
 }
 .foot__last{
   color: white;
   padding: 50px 20px;
+  @media (max-width: 800px){
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 2%;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }  
 }
 .foot__last a:hover{
   cursor: pointer;
   opacity: 0.7;
 }
 .foot__last img{
-  margin-right: 30px;  
+  margin-right: 30px;
+  @media (max-width: 800px){
+    margin-right: 35px;    
+  } 
 }
