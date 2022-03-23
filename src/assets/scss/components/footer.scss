@@ -1,49 +1,6 @@
 footer{
   background-color: black;
-}
-.hero__girl{
-  display: flex;
-}
-.hero__form{
-  position: relative;
-  left: -35%;
-  margin-top: 10%;
-  min-width: 450px;
-}
-.hero__form input{
-  display: block;
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgba(189, 174, 130, 1);
-  border: 2px solid rgba(189, 174, 130, 1);
-  min-width: 450px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
-}
-.hero__form h5{
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 80px;
-  color: #BDAE82;
-}
-.hero__form input:nth-child(4){
-  min-height: 100px;
-  min-width: 450px;
-  margin-bottom: 40px;
-  word-wrap: wrap;
-}
-.hero__form button{
-  padding: 8px 40px;
-  background-color: #BDAE82;
-  color: black;
-  cursor: pointer;
-  outline: none;
-  border: none;
+  min-width: 1440px;
 }
 .foot-bottom{
   display: flex;

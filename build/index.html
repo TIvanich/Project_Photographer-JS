@@ -23,12 +23,12 @@
     <main class="main">
       <div class="container">
         <div class="hero">
-          <div class="hero___tittle">     
+          <div class="hero__tittle">     
             <h1 text="hero-title">Alexa Rise</h1>
             <h3 text="hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</h3>
             <button text="hire">Hire me</button>
           </div>
-          <div class="hero___img"><img src="./assets/imgs/bg.png" alt="bg"></div>
+          <div class="hero__img"><img class="hero__background" src="./assets/imgs/bg.png" alt="bg"></div>
         </div>
         <div class="skills"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="skills">Skills</span>
           <div class="skills__direction">
@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="videos"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="skill-title-2">Video</span>
-          <div class="videos__hero"><img src="./assets/imgs/video.png" alt="video">
+          <div class="videos__hero"><img class="videos__backgorund" src="./assets/imgs/video.png" alt="video">
             <button> <img src="./assets/imgs/play.svg" alt="play"></button>
           </div>
         </div>
@@ -109,21 +109,21 @@
                 <button text="order">Order shooting</button>
               </ul>
             </div>
+            <div class="hero__girl"><img class="hero__background" src="./assets/imgs/contacts.jpg" alt="contacts">
+              <form class="hero__form" action="#">
+                <h5 text="contact-me">Contact me</h5>
+                <input type="text" placeholder="Email">
+                <input type="number" placeholder="Phone">
+                <input type="text" placeholder="Message">
+                <button text="send-message">Send message</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="hero__girl"><img src="./assets/imgs/contacts.jpg" alt="contacts">
-          <form class="hero__form" action="#">
-            <h5 text="contact-me">Contact me</h5>
-            <input type="text" placeholder="Email">
-            <input type="number" placeholder="Phone">
-            <input type="text" placeholder="Message">
-            <button text="send-message">Send message</button>
-          </form>
-        </div>
+      <div class="container">   
         <div class="foot-bottom">
           <div class="foot__git"><span>©</span><span>2022</span><span>github</span></div>
           <div class="foot__center"><span>Rolling Scopes School</span></div>
@@ -233,6 +233,8 @@
       elem.innerHTML = arrLang['en'][elem.getAttribute('text')]
     })
   }
+
+// бургер
 
     </script>
   </body>

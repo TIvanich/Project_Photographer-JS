@@ -1,17 +1,18 @@
 main{
   background-color: black;
+  min-width: 1440px;
 }
 .hero{
   display: flex;
   margin-bottom: 100px;
 }
-.hero___tittle{
+.hero__tittle{
   color: white;
   z-index: 1;
   margin-top: 15%;
   margin-left: 50px;
 }
-.hero___tittle h1{
+.hero__tittle h1{
   min-width: 500px;
   font-family: 'Merriweather', serif;
   font-style: normal;
@@ -20,7 +21,7 @@ main{
   line-height: 120px;
   color: #FFFFFF;
 }
-.hero___tittle h3{
+.hero__tittle h3{
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,7 +31,7 @@ main{
   max-width: 460px;
   margin-bottom: 25px;
 }
-.hero___tittle button{
+.hero__tittle button{
   color: rgba(0, 0, 0, 1);
   border: none;
   outline: none;
@@ -43,16 +44,18 @@ main{
   padding: 8px 73px;
   cursor: pointer;
 }
-.hero___tittle button:hover{
+.hero__tittle button:hover{
   opacity: 0.9;
 }
-.hero___img{
+.hero__img{
   position: relative;
   margin-top: -3%;
   left: -40%;
   z-index: 0;
   background-color: rgba(0, 0, 0, 1);
-  width: 100%;
+}
+.hero__background{
+  width: 167%;
 }
 .skills{
   text-align: center;
@@ -82,6 +85,7 @@ main{
   z-index: 1;
 }
 .skills__direction{
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -183,6 +187,9 @@ main{
 .videos__hero{
   margin-top: 80px;
 }
+.videos__background{
+  width: 100%;
+}
 .videos__hero button{
   position: relative;
   top: -450px;
@@ -260,6 +267,51 @@ main{
   background-color: rgba(189, 174, 130, 1);
   margin-top: 48px;
   cursor: pointer;
+}
+.hero__girl{
+  margin-top: 100px;
+  display: flex;
+}
+.hero__form{
+  position: relative;
+  left: -35%;
+  margin-top: 10%;
+  min-width: 450px;
+}
+.hero__form input{
+  display: block;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(189, 174, 130, 1);
+  border: 2px solid rgba(189, 174, 130, 1);
+  min-width: 450px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+}
+.hero__form h5{
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #BDAE82;
+}
+.hero__form input:nth-child(4){
+  min-height: 100px;
+  min-width: 450px;
+  margin-bottom: 40px;
+  word-wrap: wrap;
+}
+.hero__form button{
+  padding: 8px 40px;
+  background-color: #BDAE82;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 

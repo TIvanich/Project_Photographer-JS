@@ -1,12 +1,12 @@
 main.main
   .container
     .hero
-      .hero___tittle      
+      .hero__tittle      
         h1(text='hero-title') Alexa Rise
         h3(text='hero-text') Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
         button(text='hire') Hire me
-      .hero___img
-        img(src="./assets/imgs/bg.png", alt="bg")
+      .hero__img
+        img.hero__background(src="./assets/imgs/bg.png", alt="bg")
     .skills
       img.line(src="./assets/imgs/line.svg", alt="line")
       span(text='skills') Skills
@@ -52,7 +52,7 @@ main.main
       img.line(src="./assets/imgs/line.svg", alt="line")
       span(text='skill-title-2') Video
       .videos__hero
-        img(src="./assets/imgs/video.png", alt="video")
+        img.videos__backgorund(src="./assets/imgs/video.png", alt="video")
         button 
           img(src="./assets/imgs/play.svg", alt="play")
     .prices
@@ -89,4 +89,12 @@ main.main
             li(text='price-description-3-span-4') 50 photos in retouch
             li(text='price-description-3-span-5') Readiness 1 week
             button(text='order') Order shooting
+        .hero__girl
+          img.hero__background(src="./assets/imgs/contacts.jpg", alt="contacts")
+          form.hero__form(action="#")
+            h5(text='contact-me') Contact me
+            input(type="text" placeholder="Email")
+            input(type="number" placeholder="Phone")
+            input(type="text" placeholder="Message")
+            button(text='send-message') Send message
         

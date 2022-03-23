@@ -100,3 +100,5 @@
       elem.innerHTML = arrLang['en'][elem.getAttribute('text')]
     })
   }
+
+// бургер
