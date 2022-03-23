@@ -1,9 +1,7 @@
 header{
     background:black;
-    min-width: 1440px;
 }
 .container{
-    width: 1440px;
     padding: 15px;
     margin: 0 auto;
   }
@@ -13,11 +11,9 @@ header{
   }
   .menu{
     display: flex;
-  }
-  .menu___btn{
-    margin-left: auto;
-  }
-  .menu___btn a, .menu___btn{
+    justify-content: space-between;
+  }  
+  .menu__btn a, .menu__btn{
     font-family: Inter, sans-serif;
     color: white;
     font-style: normal;
@@ -27,9 +23,14 @@ header{
     text-decoration: none;
     outline: none;
     border: none;
-    margin-right: 30px;
+    margin-right: 30px;    
   }
-  .menu___btn span{
+  @media (max-width: 840px){
+    .menu__btn a{
+      display: none;
+    }
+  }
+    .menu__btn span{
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +42,7 @@ header{
     border: none;
     margin: 0px 9px;
   }  
-  .menu___btn button{
+  .menu__btn button{
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -57,10 +58,37 @@ header{
   .logomenu:hover{
     opacity: 0.7;
   }
-  .menu___btn a:hover{
+  .menu__btn a:hover{
     opacity: 0.7;
   }
-  .menu___btn button:hover{
+  .menu__btn button:hover{
     opacity: 0.7;
   }
-  
+  .change__theme{
+    color: white;
+  }
+  .moon{
+    position: relative;
+    top: 15px;
+    height: 55px;
+    width: 55px;
+    color: white;
+    padding-top: 5px;
+    display: none;
+  }
+  .sun{
+    position: relative;
+    top: 15px;
+    height: 55px;
+    width: 55px;
+    color: white;
+    padding-top: 5px;
+  }
+  .burger{
+    position: relative;
+    top: 15px;
+    display: none;
+    @media (max-width: 840px){
+      display: block;
+      }
+  }

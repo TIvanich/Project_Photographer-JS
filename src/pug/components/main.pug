@@ -5,11 +5,13 @@ main.main
         h1(text='hero-title') Alexa Rise
         h3(text='hero-text') Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
         button(text='hire') Hire me
-      .hero__img
-        img.hero__background(src="./assets/imgs/bg.png", alt="bg")
+      //- .hero__img
+        //- img.hero__background(src="./assets/imgs/bg.png", alt="bg")
     .skills
-      img.line(src="./assets/imgs/line.svg", alt="line")
-      span(text='skills') Skills
+      .skills-line
+        img.line(src="./assets/imgs/line.svg", alt="line")
+        span(text='skills') Skills
+        img.line(src="./assets/imgs/line.svg", alt="line")
       .skills__direction
         .skills__direction-block
           img(src="./assets/imgs/camera.svg", alt="camera")
@@ -28,8 +30,10 @@ main.main
           h7(text='skill-title-4') Audio
           p(text='skill-text-4') Professional sounds recording for video, advertising, portfolio
     .portfolio
-      img.line(src="./assets/imgs/line.svg", alt="line")
-      span(text='portfolio') Portfolio
+      .skills-line
+        img.line(src="./assets/imgs/line.svg", alt="line")
+        span(text='portfolio') Portfolio
+        img.line(src="./assets/imgs/line.svg", alt="line")
       .portfolio__button
         button.portfolio__btn(text='winter') Winter
         button.portfolio__btn(text='spring') Spring
@@ -37,27 +41,31 @@ main.main
         button.portfolio__btn(text='autumn') Autumn
       .portfolio__photos-grid
         .portfolio__item1
-          img(src="./assets/imgs/portfolioautumn1.png", alt="autumn1")
+          img.autumn__image(src="./assets/imgs/portfolioautumn1.png", alt="autumn1")
         .portfolio__item2
-          img(src="./assets/imgs/portfolioautumn2.png", alt="autumn2")
+          img.autumn__image(src="./assets/imgs/portfolioautumn2.png", alt="autumn2")
         .portfolio__item3
-          img(src="./assets/imgs/portfolioautumn3.png", alt="autumn3")
+          img.autumn__image(src="./assets/imgs/portfolioautumn3.png", alt="autumn3")
         .portfolio__item4
-          img(src="./assets/imgs/portfolioautumn4.png", alt="autumn4")
+          img.autumn__image(src="./assets/imgs/portfolioautumn4.png", alt="autumn4")
         .portfolio__item5
-          img(src="./assets/imgs/portfolioautumn5.png", alt="autumn5")
+          img.autumn__image(src="./assets/imgs/portfolioautumn5.png", alt="autumn5")
         .portfolio__item6
-          img(src="./assets/imgs/portfolioautumn6.png", alt="autumn6")
+          img.autumn__image(src="./assets/imgs/portfolioautumn6.png", alt="autumn6")
     .videos
-      img.line(src="./assets/imgs/line.svg", alt="line")
-      span(text='skill-title-2') Video
+      .skills-line
+        img.line(src="./assets/imgs/line.svg", alt="line")
+        span(text='video') Video
+        img.line(src="./assets/imgs/line.svg", alt="line")
       .videos__hero
-        img.videos__backgorund(src="./assets/imgs/video.png", alt="video")
+        img.videos__background(src="./assets/imgs/video.png", alt="video")
         button 
-          img(src="./assets/imgs/play.svg", alt="play")
+          img.button__image(src="./assets/imgs/play.svg", alt="play")
     .prices
-      img.line(src="./assets/imgs/line.svg", alt="line")
-      span(text='price') Price
+      .skills-line
+        img.line(src="./assets/imgs/line.svg", alt="line")
+        span(text='price') Prices
+        img.line(src="./assets/imgs/line.svg", alt="line")
       .prices__direction
         .prices__direction-block          
           h7 Standart
@@ -90,7 +98,7 @@ main.main
             li(text='price-description-3-span-5') Readiness 1 week
             button(text='order') Order shooting
         .hero__girl
-          img.hero__background(src="./assets/imgs/contacts.jpg", alt="contacts")
+          img.hero__background-foot(src="./assets/imgs/contacts.jpg", alt="contacts")
           form.hero__form(action="#")
             h5(text='contact-me') Contact me
             input(type="text" placeholder="Email")

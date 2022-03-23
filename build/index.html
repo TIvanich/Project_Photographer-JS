@@ -13,9 +13,11 @@
     <header class="header">
       <div class="container">
         <div class="menu"><a href="#"> <img class="logomenu" src="./assets/imgs/logophoto.png" alt="photo"></a>
-          <div class="menu___btn"><a href="#" text="skills">Skills</a><a href="#" text="portfolio">Portfolio</a><a href="#" text="video">Video</a><a href="#" text="price">Price</a><a href="#" text="contacts">Contacts</a>
+          <div class="menu__btn"><a href="#" text="skills">Skills</a><a href="#" text="portfolio">Portfolio</a><a href="#" text="video">Video</a><a href="#" text="price">Price</a><a href="#" text="contacts">Contacts</a>
             <button class="en">en</button><span>/</span>
             <button class="ru">ru</button>
+            <button class="change__theme"><img class="moon" src="./assets/imgs/moon.png" alt="moon"><img class="sun" src="./assets/imgs/sun.png" alt="sun"></button>
+            <button class="burger__menu"><img class="burger" src="./assets/imgs/burger.svg" alt="burger"></button>
           </div>
         </div>
       </div>
@@ -28,9 +30,9 @@
             <h3 text="hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</h3>
             <button text="hire">Hire me</button>
           </div>
-          <div class="hero__img"><img class="hero__background" src="./assets/imgs/bg.png" alt="bg"></div>
         </div>
-        <div class="skills"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="skills">Skills</span>
+        <div class="skills">
+          <div class="skills-line"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="skills">Skills</span><img class="line" src="./assets/imgs/line.svg" alt="line"></div>
           <div class="skills__direction">
             <div class="skills__direction-block"><img src="./assets/imgs/camera.svg" alt="camera">
               <h7 text="skill-title-1">Digital photography</h7>
@@ -50,7 +52,8 @@
             </div>
           </div>
         </div>
-        <div class="portfolio"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="portfolio">Portfolio</span>
+        <div class="portfolio">
+          <div class="skills-line"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="portfolio">Portfolio</span><img class="line" src="./assets/imgs/line.svg" alt="line"></div>
           <div class="portfolio__button">
             <button class="portfolio__btn" text="winter">Winter</button>
             <button class="portfolio__btn" text="spring">Spring</button>
@@ -58,20 +61,22 @@
             <button class="portfolio__btn" text="autumn">Autumn</button>
           </div>
           <div class="portfolio__photos-grid">
-            <div class="portfolio__item1"><img src="./assets/imgs/portfolioautumn1.png" alt="autumn1"></div>
-            <div class="portfolio__item2"><img src="./assets/imgs/portfolioautumn2.png" alt="autumn2"></div>
-            <div class="portfolio__item3"><img src="./assets/imgs/portfolioautumn3.png" alt="autumn3"></div>
-            <div class="portfolio__item4"><img src="./assets/imgs/portfolioautumn4.png" alt="autumn4"></div>
-            <div class="portfolio__item5"><img src="./assets/imgs/portfolioautumn5.png" alt="autumn5"></div>
-            <div class="portfolio__item6"><img src="./assets/imgs/portfolioautumn6.png" alt="autumn6"></div>
+            <div class="portfolio__item1"><img class="autumn__image" src="./assets/imgs/portfolioautumn1.png" alt="autumn1"></div>
+            <div class="portfolio__item2"><img class="autumn__image" src="./assets/imgs/portfolioautumn2.png" alt="autumn2"></div>
+            <div class="portfolio__item3"><img class="autumn__image" src="./assets/imgs/portfolioautumn3.png" alt="autumn3"></div>
+            <div class="portfolio__item4"><img class="autumn__image" src="./assets/imgs/portfolioautumn4.png" alt="autumn4"></div>
+            <div class="portfolio__item5"><img class="autumn__image" src="./assets/imgs/portfolioautumn5.png" alt="autumn5"></div>
+            <div class="portfolio__item6"><img class="autumn__image" src="./assets/imgs/portfolioautumn6.png" alt="autumn6"></div>
           </div>
         </div>
-        <div class="videos"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="skill-title-2">Video</span>
-          <div class="videos__hero"><img class="videos__backgorund" src="./assets/imgs/video.png" alt="video">
-            <button> <img src="./assets/imgs/play.svg" alt="play"></button>
+        <div class="videos">
+          <div class="skills-line"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="video">Video</span><img class="line" src="./assets/imgs/line.svg" alt="line"></div>
+          <div class="videos__hero"><img class="videos__background" src="./assets/imgs/video.png" alt="video">
+            <button> <img class="button__image" src="./assets/imgs/play.svg" alt="play"></button>
           </div>
         </div>
-        <div class="prices"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="price">Price</span>
+        <div class="prices">
+          <div class="skills-line"><img class="line" src="./assets/imgs/line.svg" alt="line"><span text="price">Prices</span><img class="line" src="./assets/imgs/line.svg" alt="line"></div>
           <div class="prices__direction">
             <div class="prices__direction-block">         
               <h7>Standart</h7>
@@ -109,7 +114,7 @@
                 <button text="order">Order shooting</button>
               </ul>
             </div>
-            <div class="hero__girl"><img class="hero__background" src="./assets/imgs/contacts.jpg" alt="contacts">
+            <div class="hero__girl"><img class="hero__background-foot" src="./assets/imgs/contacts.jpg" alt="contacts">
               <form class="hero__form" action="#">
                 <h5 text="contact-me">Contact me</h5>
                 <input type="text" placeholder="Email">
