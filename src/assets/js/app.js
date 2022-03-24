@@ -102,3 +102,20 @@
   }
 
 // бургер
+const menuBtn = document.querySelector(".menu-button");
+const menuBtnLine = document.querySelectorAll(".menu-button__line");
+const menuBody = document.querySelector(".nav-menu");
+const menuList = document.querySelector(".nav-menu__list");
+const menuItem = document.querySelector(".nav-menu__item");
+
+if (menuBtn) {
+menuBtn.addEventListener("click", () => {
+  menuBody.classList.toggle("nav-menu--open");
+  menuList.classList.toggle("nav-menu__list--open");
+
+  for (let i = 0; i < menuBtnLine.length; i++) {
+    menuBtnLine[i].classList.toggle("menu-button__line--open");
+  }
+});
+}
+

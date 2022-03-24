@@ -9,7 +9,7 @@ main{
   top: -35px;
   background-image: url(../imgs/bg.png);
   background-position: 50% 50%;
-  @media (max-width: 768.75px){    
+  @media (max-width: 500.75px){    
     background-position: 50% 50%;
     text-align: center;
     vertical-align: auto;
@@ -18,10 +18,10 @@ main{
 .hero__tittle{
   color: white;
   z-index: 3;
-  margin-top: 35%;
+  margin-top: 25%;
   
   margin-left: 50px;
-  @media (max-width: 768.75px){    
+  @media (max-width: 500.75px){    
     background-position: 50% 50%;
     text-align: center;
     margin-left: 0px;
@@ -127,6 +127,9 @@ main{
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 1225px){
+    max-width: 250px;
+  }
 }
 .skills__direction-block img{
   display: block;
