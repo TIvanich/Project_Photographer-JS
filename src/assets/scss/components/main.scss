@@ -26,6 +26,9 @@ main{
   font-size: 60px;
   line-height: 120px;
   color: #FFFFFF;
+  @media (max-width: 575px){
+    min-width: 350px;
+  }
 }
 .hero__tittle h3{
   font-family: 'Inter', sans-serif;
