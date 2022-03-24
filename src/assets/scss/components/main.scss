@@ -196,10 +196,7 @@ main{
 
   @media (max-width: 1419.75px) {
     justify-content: center;    
-  }
-  @media (max-width: 950px){
-    justify-content: center;
-  }
+  }  
 }
 .autumn__image{
   width: 100%;
@@ -293,6 +290,10 @@ main{
   @media (max-width: 500px){
     padding: 50px 80px;
   }
+}
+.pricedirect__button{
+  outline: none;
+  border: none;
 }
 .prices__direction-block h7{
   font-family: 'Merriweather';
