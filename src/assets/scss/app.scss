@@ -13,7 +13,9 @@
   padding: 15px;
   margin: 0 auto;
   @media (max-width: 1024px) {
-    max-width: 1024px;    
+    max-width: 1024px;
+    padding-left: 0px;
+    padding-right: 0px;    
   }
 }
 .light{

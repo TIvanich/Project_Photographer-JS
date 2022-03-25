@@ -9,6 +9,7 @@ header{
     height: 40px;
     width: 50px;
     margin-top: 50%;
+    margin-left: 15px;
   }
   .menu{
     display: flex;
@@ -236,5 +237,14 @@ header{
     .button-fixed{
       position: fixed;
       right: 50px;
+    }
+    .switch__theme{
+      height: 65px;
+      width: 65px;
+      background-image: url(../imgs/sun.png);
+      background-position: 50% 50%;
+      @media (max-width: 840px){
+        margin: 0 15p;
+      }
     }
   
