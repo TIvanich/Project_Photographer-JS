@@ -1,14 +1,14 @@
-// main{
-//   background-color: black;
-// }
+main{
+  z-index: 0;
+  position: relative;
+  top: -650px;
+}
 .hero{
   display: flex;
   margin-bottom: 100px;
-  min-height: 910px;
+  min-height: 650px;
   position: relative;
-  top: -35px;
-  background-image: url(../imgs/bg.png);
-  background-position: 50% 50%;
+  background-position: 50% 50%; 
   @media (max-width: 500.75px){    
     background-position: 50% 50%;
     text-align: center;
@@ -17,9 +17,7 @@
 }
 .hero__tittle{
   color: white;
-  z-index: 3;
-  margin-top: 25%;
-  
+  z-index: 3;  
   margin-left: 50px;
   @media (max-width: 500.75px){    
     background-position: 50% 50%;
@@ -127,7 +125,7 @@
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 1225px){
-    max-width: 250px;
+    max-width: 275px;
   }
 }
 .skills__direction-block img{
@@ -181,7 +179,7 @@
   margin-right: 5px;
   cursor: pointer;
   margin-bottom: 5px;
-  min-width: 240px;
+  min-width: 250px;
 }
 .portfolio__btn:hover{
   background-color: rgba(189, 174, 130, 1);
@@ -374,6 +372,7 @@
 .hero__form{
   position: relative;
   margin-top: 10%;
+  margin-right: 5%;
   min-width: 450px;
   text-align: center;
   margin-bottom: 100px;

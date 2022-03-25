@@ -1,5 +1,8 @@
 header{
-    background:black;    
+  background-image: url(../imgs/bg.png);
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .container{
     padding: 15px;
@@ -14,6 +17,7 @@ header{
   .menu{
     display: flex;
     justify-content: space-between;
+    
   }
   .menu__btn{
     display: flex;
@@ -199,7 +203,7 @@ header{
       border: none;
       padding: 2px 3px;
       position: relative;
-      z-index: 20;
+      z-index: 3;
       display: flex;
       flex-flow: column;
       justify-content: space-between;
