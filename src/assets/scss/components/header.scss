@@ -28,7 +28,8 @@ header{
     text-decoration: none;
     outline: none;
     border: none;
-    margin-right: 30px;    
+    margin-right: 30px;
+    transition: all 0.4s;    
   }
   @media (max-width: 840px){
     .menu__btn a{
@@ -159,8 +160,8 @@ header{
       }
     
       &__list {
-        width: 60vw;
-        height: 110%;
+        width: 70vw;
+        height: 120%;
         padding: 6rem;
         display: flex;
         flex-direction: column;
@@ -170,11 +171,12 @@ header{
     
         background-color: rgb(24, 9, 20);
         transform: translatex(-100%);
-        transition: 0.6s;
+        transition: 0.2s;
         transition-delay: 0.1s;
     
         &--open {
           transform: translatex(0);
+          position: fixed;
         }
       }
     
@@ -209,7 +211,7 @@ header{
     
         background-color: rgba(255, 255, 255, 1);
         border-radius: 5px;
-        transition: 0.4s all;
+        transition: 0.2s all;
     
         &--open {
           background-color: #fff;
@@ -230,5 +232,9 @@ header{
           }
         }
       }
+    }
+    .button-fixed{
+      position: fixed;
+      right: 50px;
     }
   

@@ -6,6 +6,7 @@
       'video': 'Video',
       'price': 'Price',
       'contacts': 'Contacts',
+      'home' : 'Home',
       'hero-title': 'Alexa Rise',
       'hero-text': 'Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise',
       'hire': 'Hire me',
@@ -46,6 +47,7 @@
       'video': 'Видео',
       'price': 'Цены',
       'contacts': 'Контакты',
+      'home' : 'Домой',
       'hero-title': 'Алекса Райс',
       'hero-text': 'Сохраните искренние эмоции, романтические переживания и счастливые моменты жизни вместе с профессиональным фотографом',
       'hire': 'Пригласить',
@@ -112,10 +114,15 @@ if (menuBtn) {
 menuBtn.addEventListener("click", () => {
   menuBody.classList.toggle("nav-menu--open");
   menuList.classList.toggle("nav-menu__list--open");
+  menuBtn.classList.toggle("button-fixed")
 
   for (let i = 0; i < menuBtnLine.length; i++) {
     menuBtnLine[i].classList.toggle("menu-button__line--open");
   }
 });
 }
+
+//переключатель темы
+const buttonThemeMoon = document.querySelector('.moon')
+console.log(buttonThemeMoon)
 

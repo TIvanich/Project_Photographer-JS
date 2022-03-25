@@ -201,11 +201,34 @@ main{
     justify-content: center;    
   }  
 }
+@media (max-width: 450.75px) {
+  .portfolio__item1{
+    max-width: 350px;
+}
+  .portfolio__item2{
+    max-width: 350px;
+}
+  .portfolio__item3{
+  max-width: 350px;
+}
+  .portfolio__item4{
+  max-width: 350px;
+}
+  .portfolio__item5{
+  max-width: 350px;
+}
+  .portfolio__item6{
+    max-width: 350px;
+} 
+  .portfolio__photos-grid{
+    justify-items: center;
+}
+}
 .autumn__image{
   width: 100%;
   height: 100%;
   @media (max-width: 500px){
-    max-width: 320px;
+    max-width: 300px;
   }  
 }
 .portfolio__photos img{
@@ -221,7 +244,6 @@ main{
   font-size: 40px;
   line-height: 80px;
   color: rgba(189, 174, 130, 1);
-  background-color: black;
   z-index: 1;  
 }
 
@@ -251,8 +273,8 @@ main{
   @media(max-width: 680px) {
     left: calc(-40% - 130px);
   }
-  @media(max-width: 680px) {
-    left: calc(-38% - 130px);
+  @media(max-width: 450px) {
+    left: -70%;
   }
 }
 .videos__hero button:active{
@@ -271,13 +293,15 @@ main{
   font-size: 40px;
   line-height: 80px;
   color: rgba(189, 174, 130, 1);
-  background-color: black;
   z-index: 1;
 }
 .prices__direction{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  &::nth-child(3){
+    padding: 50px 65px;
+  }
   @media (max-width: 1024px){
     justify-content: space-evenly;
   }
@@ -292,7 +316,7 @@ main{
   padding: 50px 120px;
   @media (max-width: 500px){
     padding: 50px 80px;
-  }
+  }  
 }
 .pricedirect__button{
   outline: none;
@@ -325,6 +349,9 @@ main{
   line-height: 36px;
   text-align: center;
   color: #FFFFFF;
+  @media (max-width:450px) {
+    font-size: 14px;
+  }
 }
 .prices__direction-block button{
   padding: 7px 40px;
@@ -349,13 +376,18 @@ main{
   min-width: 450px;
   text-align: center;
   margin-bottom: 100px;
-  @media (max-width: 451px) {
+  @media (max-width: 551px) {
     min-width: 320px;
-  }  
+    & h5{
+      font-size: 15px;
+    }
+  }
+    
 }
 .hero__form input{
   display: block;
   margin-top: 20px;
+  margin-left: 5px;
   background-color: rgba(0, 0, 0, 0.5);
   color: rgba(189, 174, 130, 1);
   border: 2px solid rgba(189, 174, 130, 1);
@@ -365,7 +397,7 @@ main{
   font-weight: 400;
   font-size: 20px;
   line-height: 40px;
-  @media (max-width: 451px) {
+  @media (max-width: 551px) {
     min-width: 320px;
   } 
 
@@ -396,8 +428,7 @@ main{
   border: none; 
 }
 .hero__background-foot{
-  width: 100%;
-  
+  width: 100%;  
 }
 
 

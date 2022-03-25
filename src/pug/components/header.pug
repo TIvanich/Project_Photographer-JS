@@ -1,33 +1,35 @@
-header.header
+header.header(id='home')
         .container
                 .menu
                         a(href="#") 
                                 img.logomenu(src="./assets/imgs/logophoto.png", alt="photo")
                         .menu__btn
-                                a(href="#" text='skills') Skills
-                                a(href="#" text='portfolio') Portfolio
-                                a(href="#" text='video') Video
-                                a(href="#" text='price') Price
-                                a(href="#" text='contacts') Contacts
+                                a(href="#skills" text='skills') Skills
+                                a(href="#portfolio" text='portfolio') Portfolio
+                                a(href="#video" text='video') Video
+                                a(href="#price" text='price') Price
+                                a(href="#contacts" text='contacts') Contacts
                                 button.en en
                                 span /
                                 button.ru ru
-                                button.change__theme
+                                button.switch__theme
                                         img.moon(src="./assets/imgs/moon.png", alt="moon")
                                         img.sun(src="./assets/imgs/sun.png", alt="sun")
                                 .navbar
                                         nav.nav-menu
                                                 ul.nav-menu__list
                                                         li.nav-menu__item
-                                                                a.nav-menu__link(href="#" text='skills') Skills
+                                                                a.nav-menu__link(href="#home" text='home') Home
                                                         li.nav-menu__item
-                                                                a.nav-menu__link(href="#" text='portfolio') Portfolio
+                                                                a.nav-menu__link(href="#skills" text='skills') Skills
                                                         li.nav-menu__item
-                                                                a.nav-menu__link(href="#" text='video') Video
+                                                                a.nav-menu__link(href="#portfolio" text='portfolio') Portfolio
                                                         li.nav-menu__item
-                                                                a.nav-menu__link(href="#" text='price') Price
+                                                                a.nav-menu__link(href="#video" text='video') Video
                                                         li.nav-menu__item
-                                                                a.nav-menu__link(href="#" text='contacts') Contacts
+                                                                a.nav-menu__link(href="#price" text='price') Price
+                                                        li.nav-menu__item
+                                                                a.nav-menu__link(href="#contacts" text='contacts') Contacts
 
                                         button.menu-button
                                                 span.menu-button__line
