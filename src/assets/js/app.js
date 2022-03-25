@@ -123,6 +123,11 @@ menuBtn.addEventListener("click", () => {
 }
 
 //переключатель темы
+
+// const switchBtnMoon = document.querySelector('.moon')
+// const switchBtnMoon = document.querySelector('sun')
+
+
 // const switchTheme = () =>{
 //   const html = document.querySelector('html')
 //   html.classList.add('dark')
