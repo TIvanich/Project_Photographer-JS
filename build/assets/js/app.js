@@ -123,3 +123,36 @@ menuBtn.addEventListener("click", () => {
 }
 // переключатель цвета
 
+const sunBtn = document.querySelector('.sun')
+const moonBtn = document.querySelector('.moon')
+const htmlPage = document.querySelector('html')
+
+  sunBtn.addEventListener('click', sun)
+    
+    function sun(){
+      htmlPage.classList.add('sunlight')
+      localStorage.setItem('htmltheme', 'sunlight')
+      sunBtn.style.display='none'
+      moonBtn.style.display='block'
+    }
+
+  moonBtn.addEventListener('click', moon)
+    
+  function moon(){
+    htmlPage.classList.remove('sunlight')
+    localStorage.removeItem('htmltheme')
+    sunBtn.style.display='block'
+    moonBtn.style.display='none'
+  }
+
+  function memoryTheme() {
+
+    if (localStorage.getItem('htmltheme') === 'sunlight') {
+      sun();  
+    } else {
+      moon();
+    }
+  } 
+  
+  memoryTheme();
+
