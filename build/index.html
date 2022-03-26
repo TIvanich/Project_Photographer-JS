@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="night" lang="en">
+<html class="light" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -128,6 +128,10 @@
             </div>
           </div>
         </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
         <div class="hero__girl">
           <form class="hero__form" action="#" id="contacts">
             <h5 text="contact-me">Contact me</h5>
@@ -137,10 +141,6 @@
             <button text="send-message">Send message</button>
           </form>
         </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="container">   
         <div class="foot-bottom">
           <div class="foot__git"><span>© 2022 github        </span></div>
           <div class="foot__center"><span>Rolling Scopes School</span></div>
@@ -271,75 +271,7 @@ menuBtn.addEventListener("click", () => {
   }
 });
 }
-
-// //переключатель темы
-
-// const switchBtnMoon = document.querySelector('.moon')
-// const switchBtnSun = document.querySelector('.sun')
-// const htmlPage = document.querySelector('html')
-
-// switchBtnSun.addEventListener('click', function(){
-//   html.classList.add('light')
-//   localStorage.setItem('htmlLight')
-// })
-
-// switchBtnMoon.addEventListener('click', function(){
-//   html.classList.remove('light')
-//   localStorage.setItem('htmlLight')
-// })
-
-
-
-// // const switchTheme = () =>{
-// //   const html = document.querySelector('html')
-// //   html.classList.add('dark')
-// //   const switchBtn = document.querySelector('.switch-theme');
-
-// //   const getLocalStorageTheme = ()=>{
-// //       const local = localStorage.getItem('theme')
-// //       if(local){
-// //           const parseTheme = JSON.parse(local)
-// //           addActivClassTheme(parseTheme)
-// //       }else{
-// //           addActivClassTheme('moon')
-// //       }
-// //   }
-// //   const saveLocalStorage = (value) =>{
-// //       localStorage.setItem('theme', JSON.stringify(value))
-// //   }
-// //   switchBtn.addEventListener('click', (e)=>{
-// //       const target = e.target.getAttribute('data-theme');
-// //       let reversTheme = null;
-
-// //       if(target === 'sun'){
-// //           reversTheme = 'moon';
-// //       }else{
-// //           reversTheme = 'sun';
-// //       }
-
-// //       saveLocalStorage(reversTheme)
-// //       addActivClassTheme(reversTheme)
-// //   })
-
-// //   const removeActivClassTheme = (value)=>{
-// //           switchBtn.classList.remove(value);
-// //   }
-
-// //   const addActivClassTheme = (value)=>{
-
-// //       let reversTheme = value === 'moon' ? 'sun' : 'moon';
-
-// //       removeActivClassTheme(value);
-
-// //       switchBtn.setAttribute('data-theme', value)
-// //       switchBtn.classList.add(reversTheme);
-
-// //       html.classList.remove(reversTheme);
-// //       html.classList.add(value)
-// //   }
-// //   getLocalStorageTheme()
-// // }
-// // export default switchTheme;
+// переключатель цвета
 
 
     </script>

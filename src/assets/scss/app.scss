@@ -3,29 +3,7 @@
 @import './components/main.scss';
 @import './components/footer.scss';
 
-*{
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-body{
-  max-height: 5300px;
-}
-html.night{
-  background-color: black;
-}
-html.light{
-  background-color: white;
-}
-.container{
-  max-width: 1440px;
-  padding: 15px;
-  margin: 0 auto;
-  @media (max-width: 1024px) {
-    max-width: 1024px;
-    padding-left: 0px;
-    padding-right: 0px;    
-  }
-}
+
 
 
 
