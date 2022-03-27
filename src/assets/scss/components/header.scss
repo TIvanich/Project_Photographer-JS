@@ -28,7 +28,6 @@ header{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 50px;
     text-decoration: none;
     outline: none;
     border: none;
@@ -150,12 +149,10 @@ header{
       left: 0;
       top: 0;
       z-index: 8;
-      position: fixed;
-    
+      position: fixed;    
       display: flex;
       align-items: center;
       justify-content: flex-end;
-
       visibility: hidden;
       opacity: 0;
       background-color: rgba(0, 0, 0, 0.7);
@@ -171,13 +168,12 @@ header{
       &__list {
         width: 70vw;
         height: 120%;
-        padding: 6rem;
+        padding: 2rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 3rem;
-    
+        gap: 2rem;    
         background-color: rgb(24, 9, 20);
         transform: translatex(-100%);
         transition: 0.2s;
