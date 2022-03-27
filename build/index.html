@@ -243,6 +243,8 @@ function translatePageRu(element){
   lang.forEach(function(elem){
     elem.innerHTML = arrLang['ru'][elem.getAttribute('text')]
     localStorage.setItem('lang', 'ru')
+    ruLang.classList.add('active')
+    engLang.classList.remove('active')
   })
 }
 
@@ -252,6 +254,8 @@ function translatePageEn(element){
   lang.forEach(function(elem){
     elem.innerHTML = arrLang['en'][elem.getAttribute('text')]
     localStorage.removeItem('lang')
+    ruLang.classList.remove('active')
+    engLang.classList.add('active')
   })
 }
 
