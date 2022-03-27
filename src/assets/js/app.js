@@ -92,6 +92,7 @@ ruLang.addEventListener('click', translatePageRu)
 function translatePageRu(element){
   lang.forEach(function(elem){
     elem.innerHTML = arrLang['ru'][elem.getAttribute('text')]
+    localStorage.setItem('lang', 'ru')
   })
 }
 
@@ -100,8 +101,20 @@ engLang.addEventListener('click', translatePageEn)
 function translatePageEn(element){
   lang.forEach(function(elem){
     elem.innerHTML = arrLang['en'][elem.getAttribute('text')]
+    localStorage.removeItem('lang')
   })
 }
+
+function memoryLang() {
+
+  if (localStorage.getItem('lang') === 'ru') {
+    translatePageRu();  
+  } else {
+    translatePageEn();
+  }
+} 
+
+memoryLang();
 
 // бургер
 const menuBtn = document.querySelector(".menu-button");
