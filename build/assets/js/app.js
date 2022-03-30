@@ -174,3 +174,26 @@ function memoryTheme() {
 } 
 
 memoryTheme();
+
+// портфолио
+
+const allImage = document.querySelectorAll('.item__image')
+const allBtn = document.querySelectorAll('.portfolio__btn')
+          
+document.querySelector('.nav').addEventListener('click', elem =>{
+  if (elem.target.tagName !== 'BUTTON') return false;           
+  let filterClass = elem.target.dataset['weather']            
+            
+  allImage.forEach( event => {
+    event.classList.remove('nonactive')
+    if (!event.classList.contains(filterClass)){
+        event.classList.add('nonactive')
+    }                    
+  })
+  allBtn.forEach (element =>{
+    element.classList.remove('activebtn')
+    if (!element.classList.contains(filterClass)){
+        element.classList.add('activebtn')
+    }
+  })            
+})

@@ -68,11 +68,15 @@ footer{
 }
 .hero__form button{
   padding: 8px 40px;
-  background-color: #BDAE82;
+  background-color: rgba(189, 174, 130, 1);
   color: black;
+  border-radius: 3px;
   cursor: pointer;
   outline: none;
   border: none; 
+}
+.hero__form button:hover{
+  background-color: rgba(189, 174, 130, 0.7);
 }
 .hero__background-foot{
   width: 100%;  

@@ -35,6 +35,9 @@ html.sunlight{
   & .portfolio__btn:hover{
     opacity: 0.7;
   }
+  .activebtn{
+    background-color: white;
+  }
   .videos span{
     color: black;
   }
@@ -263,34 +266,28 @@ main{
   }  
 }
 @media (max-width: 450.75px) {
-  .portfolio__item1{
+  .portfolio__item{
     max-width: 350px;
-}
-  .portfolio__item2{
-    max-width: 350px;
-}
-  .portfolio__item3{
-  max-width: 350px;
-}
-  .portfolio__item4{
-  max-width: 350px;
-}
-  .portfolio__item5{
-  max-width: 350px;
-}
-  .portfolio__item6{
-    max-width: 350px;
-} 
+  } 
   .portfolio__photos-grid{
     justify-items: center;
+  }
 }
-}
-.autumn__image{
+.item__image{
   width: 100%;
   height: 100%;
+  max-height: 566px;
+  max-width: 450px;
   @media (max-width: 500px){
     max-width: 300px;
-  }  
+  }
+}
+.nonactive{
+  display: none;
+}
+.activebtn{
+  background-color: rgba(189, 174, 130, 0.7);
+  color: #000;
 }
 .portfolio__photos img{
   margin-bottom: 25px;
@@ -377,7 +374,7 @@ main{
   color: white;
   text-align: center;
   margin-top: 60px;
-  padding: 50px 120px;
+  padding: 50px 100px;
   @media (max-width: 500px){
     padding: 50px 80px;
   }  
@@ -422,13 +419,14 @@ main{
   background-color: rgba(189, 174, 130, 1);
   margin-top: 48px;
   font-family: 'Merriweather', sans-serif;
+  border-radius: 5px;
   cursor: pointer;
   border: none;
   outline: none;
   color: black;
 }
 .prices__direction-block button:hover{
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(189, 174, 130, 0.7);
 }
 
 
